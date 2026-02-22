@@ -30,17 +30,6 @@ npm run dev
 npm run build
 ```
 
-## Netlify ile Yayına Alma
-
-1. Projeyi GitHub'a yükleyin
-2. [Netlify](https://netlify.com) hesabı açın
-3. "Add new site" → "Import an existing project"
-4. GitHub repo'nuzu seçin
-5. Build command: `npm run build`
-6. Publish directory: `dist`
-
-veya `netlify.toml` dosyası projede hazır olduğu için otomatik algılanacaktır.
-
 ## Proje Yapısı
 
 ```
