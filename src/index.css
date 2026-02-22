@@ -10,7 +10,6 @@
   }
 }
 
-/* Organik blob arka plan */
 .bg-organic {
   background: linear-gradient(135deg, #FAF6F0 0%, #EDE6DC 40%, #F5EFE7 100%);
   position: relative;
@@ -41,12 +40,10 @@
   pointer-events: none;
 }
 
-/* Glass kart efekti */
 .glass-card {
   @apply bg-white/80 backdrop-blur-sm border border-white/60;
 }
 
-/* Kalori ilerleme barı - yükleme efekti (kum tonu) */
 .progress-bar-shimmer {
   background: linear-gradient(
     90deg,

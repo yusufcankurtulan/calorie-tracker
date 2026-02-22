@@ -1,10 +1,4 @@
-/**
- * Yerel besin veritabanı - Yaygın Türk mutfağı besinleri
- * Kaloriler 100g veya standart porsiyon için (notlarda belirtilmiştir)
- */
-
 export const FOOD_DATABASE = [
-  // Et ve kümes hayvanları
   { name: 'Tavuk göğsü ızgara', calories: 165, unit: '100g' },
   { name: 'Tavuk but', calories: 209, unit: '100g' },
   { name: 'Tavuk kanat', calories: 203, unit: '100g' },
@@ -20,7 +14,6 @@ export const FOOD_DATABASE = [
   { name: 'Levrek', calories: 97, unit: '100g' },
   { name: 'Hamsi (kızartma)', calories: 250, unit: '100g' },
   { name: 'Tavuk dürüm', calories: 350, unit: '1 adet' },
-  // Yumurta ve süt ürünleri
   { name: 'Yumurta (haşlanmış)', calories: 155, unit: '1 adet' },
   { name: 'Yumurta (omlet)', calories: 200, unit: '1 adet' },
   { name: 'Peynir (beyaz)', calories: 264, unit: '100g' },
@@ -31,7 +24,6 @@ export const FOOD_DATABASE = [
   { name: 'Yoğurt (sade)', calories: 61, unit: '100g' },
   { name: 'Cacık', calories: 45, unit: '1 kase' },
   { name: 'Ayran', calories: 35, unit: '1 bardak' },
-  // Ekmek ve tahıllar
   { name: 'Ekmek (beyaz)', calories: 265, unit: '100g' },
   { name: 'Ekmek (tam buğday)', calories: 247, unit: '100g' },
   { name: 'Dilim ekmek', calories: 80, unit: '1 dilim' },
@@ -46,7 +38,6 @@ export const FOOD_DATABASE = [
   { name: 'Makarna', calories: 131, unit: '100g' },
   { name: 'Yulaf ezmesi', calories: 389, unit: '100g' },
   { name: 'Müsli', calories: 352, unit: '100g' },
-  // Sebzeler
   { name: 'Salata (yeşil)', calories: 15, unit: '1 kase' },
   { name: 'Domates', calories: 18, unit: '100g' },
   { name: 'Salatalık', calories: 15, unit: '100g' },
@@ -63,7 +54,6 @@ export const FOOD_DATABASE = [
   { name: 'Karnabahar', calories: 25, unit: '100g' },
   { name: 'Avokado', calories: 160, unit: '1/2 adet' },
   { name: 'Kısır', calories: 180, unit: '1 kase' },
-  // Meyveler
   { name: 'Elma', calories: 52, unit: '100g' },
   { name: 'Muz', calories: 89, unit: '1 adet' },
   { name: 'Portakal', calories: 47, unit: '1 adet' },
@@ -79,14 +69,12 @@ export const FOOD_DATABASE = [
   { name: 'Nar', calories: 83, unit: '100g' },
   { name: 'Hurma', calories: 282, unit: '100g' },
   { name: 'Meyve smoothie', calories: 120, unit: '1 bardak' },
-  // Kuruyemişler
   { name: 'Badem', calories: 164, unit: '28g (1 avuç)' },
   { name: 'Ceviz', calories: 185, unit: '28g (7 adet)' },
   { name: 'Fındık', calories: 176, unit: '28g' },
   { name: 'Antep fıstığı', calories: 159, unit: '28g' },
   { name: 'Leblebi', calories: 120, unit: '1 kase' },
   { name: 'Fıstık ezmesi', calories: 188, unit: '2 yemek kaşığı' },
-  // Kahvaltılık ve atıştırmalıklar
   { name: 'Bal', calories: 64, unit: '1 yemek kaşığı' },
   { name: 'Reçel', calories: 56, unit: '1 yemek kaşığı' },
   { name: 'Tahin', calories: 178, unit: '2 yemek kaşığı' },
@@ -97,7 +85,6 @@ export const FOOD_DATABASE = [
   { name: 'Sahanda yumurta', calories: 250, unit: '1 porsiyon' },
   { name: 'Gözleme', calories: 280, unit: '1 adet' },
   { name: 'Krep', calories: 200, unit: '1 adet' },
-  // İçecekler
   { name: 'Su', calories: 0, unit: '1 bardak' },
   { name: 'Çay (şekersiz)', calories: 2, unit: '1 bardak' },
   { name: 'Kahve (sade)', calories: 2, unit: '1 fincan' },
@@ -107,7 +94,6 @@ export const FOOD_DATABASE = [
   { name: 'Limonata', calories: 90, unit: '1 bardak' },
   { name: 'Smoothie', calories: 150, unit: '1 bardak' },
   { name: 'Protein shake', calories: 120, unit: '1 ölçek' },
-  // Tatlılar
   { name: 'Baklava', calories: 334, unit: '1 dilim' },
   { name: 'Künefe', calories: 400, unit: '1 porsiyon' },
   { name: 'Sütlaç', calories: 150, unit: '1 kase' },
@@ -118,7 +104,6 @@ export const FOOD_DATABASE = [
   { name: 'Kurabiye', calories: 150, unit: '1 adet' },
   { name: 'Kek', calories: 350, unit: '1 dilim' },
   { name: 'Pasta', calories: 250, unit: '1 dilim' },
-  // Fast food / dışarıda
   { name: 'Hamburger', calories: 354, unit: '1 adet' },
   { name: 'Pizza', calories: 266, unit: '1 dilim' },
   { name: 'Döner', calories: 250, unit: '100g' },
@@ -130,9 +115,6 @@ export const FOOD_DATABASE = [
   { name: 'Çorba (tarhana)', calories: 70, unit: '1 kase' },
 ]
 
-/**
- * Aramaya göre besin listesini filtreler (Türkçe karakterlere duyarlı)
- */
 export function searchFoods(query) {
   if (!query || query.trim().length < 2) return []
   const q = query.trim().toLowerCase()

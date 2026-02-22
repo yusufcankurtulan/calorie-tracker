@@ -1,7 +1,3 @@
-/**
- * Kullanıcı hedefleri ve hedeflere göre diyet planları
- */
-
 export const GOALS = [
   {
     id: 'lose',
@@ -27,7 +23,6 @@ export const GOALS = [
 ]
 
 export const DIET_PLANS = [
-  // Kilo vermek
   {
     id: 'lose-1',
     goalId: 'lose',
@@ -80,7 +75,6 @@ export const DIET_PLANS = [
       { mealType: 'Son Öğün (19:00)', items: 'Izgara somon 150g, buharda brokoli-karnabahar, 1 tatlı kaşığı zeytinyağı', calories: 550 },
     ],
   },
-  // Kilo almak
   {
     id: 'gain-1',
     goalId: 'gain',
@@ -137,7 +131,6 @@ export const DIET_PLANS = [
       { mealType: 'Akşam', items: 'Balık/tavuk ızgara, sebze, 2 dilim ekmek', calories: 880 },
     ],
   },
-  // Kas yapmak
   {
     id: 'muscle-1',
     goalId: 'muscle',
